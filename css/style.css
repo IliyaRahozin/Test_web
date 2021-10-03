@@ -1,0 +1,232 @@
+/*
+-------------
+--- FONT start
+--------------
+*/
+
+
+/* noto-sans-jp-regular - latin */
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/noto-sans-jp-v36-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/noto-sans-jp-v36-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/noto-sans-jp-v36-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/noto-sans-jp-v36-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/noto-sans-jp-v36-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/noto-sans-jp-v36-latin-regular.svg#NotoSansJP') format('svg'); /* Legacy iOS */
+  }
+  /* noto-sans-jp-700 - latin */
+  @font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/noto-sans-jp-v36-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/noto-sans-jp-v36-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/noto-sans-jp-v36-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/noto-sans-jp-v36-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/noto-sans-jp-v36-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/noto-sans-jp-v36-latin-700.svg#NotoSansJP') format('svg'); /* Legacy iOS */
+  }
+  /* noto-sans-jp-900 - latin */
+  @font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/noto-sans-jp-v36-latin-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/noto-sans-jp-v36-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/noto-sans-jp-v36-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/noto-sans-jp-v36-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/noto-sans-jp-v36-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/noto-sans-jp-v36-latin-900.svg#NotoSansJP') format('svg'); /* Legacy iOS */
+  }
+
+  /* play-regular - latin */
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/play-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/play-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/play-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/play-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/play-v12-latin-regular.svg#Play') format('svg'); /* Legacy iOS */
+  }
+  /* play-700 - latin */
+  @font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v12-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/play-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/play-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/play-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/play-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/play-v12-latin-700.svg#Play') format('svg'); /* Legacy iOS */
+  }
+
+/*
+-------------
+--- FONT end
+--------------
+*/
+
+
+
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:'Noto Sans JP';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 2.2;
+    color:black;
+}
+
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*
+----------------
+--- HEADER start
+----------------
+*/
+
+
+.header__wrapper{
+    padding-top: 12px;
+    display: flex;
+    flex-wrap: wrap; /* Перенос контента, если в строка заполнена,буду переноситься на другу строку*/
+    align-items: flex-end;
+    justify-content: space-between;/* выровнять по краям контейнера елементы*/
+}
+
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item{
+    margin-right: 82px;
+}
+.header__item:first-child{
+    margin-left: 82px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__link{
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color:#000000;
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    opacity: 60%;
+    text-decoration: underline;
+}
+
+/*
+---------------
+--- HEADER end
+---------------
+*/
+
+
+
+
+/*
+---------------
+--- INTRO start
+---------------
+*/
+
+.intro{
+    height: 100vh;
+    background: url(../img/svg/start_bg_ak-47.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 115px;
+}
+
+.intro__title{
+    max-width: 464px;
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 78px;
+    line-height: 90px;
+    color: #000000;
+    margin-bottom: 30px;
+    
+}
+
+.intro__subtitle{
+    max-width: 464px;
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+
+
+.button-form__accept-login{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.form-button__try-now{
+    width: 340px;
+    height: 79px;
+    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+    padding: 23px, 105px;
+    text-transform: uppercase;
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+    background: #000000;
+    border-radius: 10px;
+    border: 0;
+}
+
+.form-button__try-now:hover, .form-button__try-now:focus, .form-button__try-now:active{
+    background: rgb(26, 25, 25);
+    
+}
+
+
+/*
+---------------
+--- INTRO end
+---------------
+*/
